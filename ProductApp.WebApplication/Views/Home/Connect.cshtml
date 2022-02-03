@@ -1,0 +1,25 @@
+﻿@model List<ProductApp.ViewModel.ProductVM.ProductViewModel>
+@{
+    ViewData["Title"] = "Connect";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table>
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var sub in Model)
+        {
+            <tr>
+                <td>@sub.Id</td>
+                <td>@sub.Name</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
